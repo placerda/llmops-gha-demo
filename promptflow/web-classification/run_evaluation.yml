@@ -3,11 +3,11 @@ flow: ../evaluation/classification-accuracy-eval
 data: data.jsonl
 run: web_classification_variant_paulo # replace with your run name
 column_mapping:
-  groundtruth: ${data.answer}
+  groundtruth: ${data.answer}   
   prediction: ${run.outputs.category}
 
 # define cloud resource
-runtime: myruntime
+runtime: automatic
 
 connections:
   classify_with_llm:
