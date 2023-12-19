@@ -8,11 +8,3 @@ column_mapping:
 
 # define cloud resource
 runtime: automatic
-
-connections:
-  classify_with_llm:
-    connection: Custom_AzureOpenAI
-    deployment_name: gpt-35-turbo
-  summarize_text_content:
-    connection: Custom_AzureOpenAI
-    deployment_name: gpt-35-turbo
